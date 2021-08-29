@@ -7,34 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Data used for visualizations</h1>
-    <h2></h2>
-    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/cities.csv>
-    <p></p>    
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-    <script>
-        function arrayToTable(tableData) {
-            var table = $('<table></table>');
-            $(tableData).each(function (i, rowData) {
-                var row = $('<tr></tr>');
-                $(rowData).each(function (j, cellData) {
-                    row.append($('<td>'+cellData+'</td>'));
-                });
-                table.append(row);
-            });
-            return table;
-        }
-    
-        $.ajax({
-            type: "GET",
-            url: "http://localhost/test/data.csv",
-            success: function (data) {
-                $('body').append(arrayToTable(Papa.parse(data).data));
-            }
-        });
-    </script>
+    <h1>Data</h1>
+    <br>
+    <p>The following table includes all of the data used for plotting during this project.</p>
+    <br>
+    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Data.png>
 
 </body>
 </html>
