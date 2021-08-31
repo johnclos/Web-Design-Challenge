@@ -1,0 +1,119 @@
+<!-- To insert a comment, press <Ctrl> and 'C' -->
+<!-- get the following boiler plate information by pressing '!' and then <Enter> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latitude Web Challenge</title>
+
+  <!-- CSS only -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- add nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plot
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Fig1.html">Temperature</a>
+            <a class="dropdown-item" href="Fig2.html">Humidity</a>
+            <a class="dropdown-item" href="Fig3.html">Cloudiness</a>
+            <a class="dropdown-item" href="Fig4.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- container to hold summary text -->
+  <main role="main" class="flex-shrink-0">
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="clear-fix">
+                    <h1>Summary: Latitude vs. X</h1>
+                        <hr>
+                        <img src="Resources/assets/images/Fig1.png" alt="" id="description-image"
+                            width="160"
+                            height="110">
+                    <p>
+                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on to over 500 cities.<p/>
+                    <p>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of this analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </div>
+            </div>
+
+      <!-- smaller container at the right has the thumbnail view-->
+            <div class="h-100">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <aside>      
+                <div class="container">
+                    <h1>Visualizations</h1>
+                    <a href="https://johnclos.github.io/Web-Design-Challenge/Fig1.html" target="_blank">
+                    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig1.png width="160" height="110"></a>
+                    <hr>
+
+                    <a href="https://johnclos.github.io/Web-Design-Challenge/Fig2.html" target="_blank">
+                    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig2.png width="160" height="110"></a>
+                    <hr>
+
+                    <a href="https://johnclos.github.io/Web-Design-Challenge/Fig3.html" target="_blank">
+                    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig3.png width="160" height="110"></a>
+                    <hr>
+
+                    <a href="https://johnclos.github.io/Web-Design-Challenge/Fig4.html" target="_blank">
+                    <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig4.png width="160" height="110"></a>
+                </div>
+                </aside>
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>
