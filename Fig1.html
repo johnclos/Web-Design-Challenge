@@ -2,11 +2,13 @@
 <!-- get the following boiler plate information by pressing '!' and then <Enter> -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude Web Challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latitude Web Challenge</title>
+
   <!-- CSS only -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
 
@@ -28,7 +30,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ms-auto">
         <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li> -->
@@ -54,21 +56,76 @@
     </div>
   </nav>
 
-  <h1>Max Temperature</h1>
+  <!-- container to hold summary text -->
+  <main role="main" class="flex-shrink-0">
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="clear-fix">
+            <h1>Max Temperature</h1>
   
-  <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig1.png
-      width="800" 
-      height="550">
-  <p>
-  As expected, the weather becomes signifcantly warmer as one approaches the equator(0 Deg. Latitude).  More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered.
-  </p>
+            <img src=https://johnclos.github.io/Web-Design-Challenge/Resources/assets/images/Fig1.png
+                width="160" 
+                height="110">
+            <p>
+            As expected, the weather becomes signifcantly warmer as one approaches the equator(0 Deg. Latitude).  More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere.  This may be due to the tilt of the earth at the time of the year this data was gathered.
+            </p>
+          </div>
+        </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-  crossorigin="anonymous"></script>
+        <!-- smaller container at the right has the thumbnail view-->
+        
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <aside>
+              <div class="container">
+                <h1>Visualizations</h1>
+                  <div class="row justify-content-between">
+                  <div class="col-md-5">
+                    <a href="Fig1.html" target="_blank">
+                      <img src=Resources/assets/images/Fig1.png width="160" height="110"></a>
+                  </div>
+
+                  <div class="col-md-2">&nbsp;</div>
+
+                  <div class="col-md-5">
+                    <a href="Fig2.html" target="_blank">
+                      <img src=Resources/assets/images/Fig2.png width="160" height="110"></a>
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-md-5">
+                    <a href="Fig3.html" target="_blank">
+                      <img src=Resources/assets/images/Fig3.png width="160" height="110"></a>
+                  </div>
+
+                  <div class="col-md-2">&nbsp;</div>
+
+                  <div class="col-md-5">
+                    <a href="Fig4.html" target="_blank">
+                      <img src=Resources/assets/images/Fig4.png width="160" height="110"></a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
